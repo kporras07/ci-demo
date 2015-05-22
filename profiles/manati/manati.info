@@ -1,5 +1,5 @@
 ; $Id$
-name = MAnati
+name = Manati
 description = Install with some Manati default settings and pre-configured integration for the Pantheon Platform
 version = VERSION
 core = 7.x
