@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Contains install, update and some related hooks for manati deployment module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function manati_deploy_install() {
+  // Do your custom stuff here.
+}
+
+/**
+ * Explain what is this hook about.
+ */
+function manati_deploy_update_7000() {
+  // Do your custom stuff here.
+  // Remember to update number in function name.
+}

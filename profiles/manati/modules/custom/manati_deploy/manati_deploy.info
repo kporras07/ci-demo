@@ -1,0 +1,4 @@
+name = Manati Deployment Module
+description = Deployment module used for Manati projects.
+core = 7.x
+package = Manatí
