@@ -25,5 +25,44 @@ dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = rdf
 
+dependencies[] = admin_menu
+dependencies[] = admin_views
+dependencies[] = context
+dependencies[] = ctools
+dependencies[] = views
+dependencies[] = date
+dependencies[] = date_api
+dependencies[] = date_views
+dependencies[] = devel
+dependencies[] = diff
+dependencies[] = features
+dependencies[] = ds
+dependencies[] = email
+dependencies[] = entity
+dependencies[] = entityreference
+dependencies[] = jquery_update
+dependencies[] = l10n_update
+dependencies[] = libraries
+dependencies[] = link
+dependencies[] = logintoboggan
+dependencies[] = module_filter
+dependencies[] = menu_attributes
+dependencies[] = pathauto
+dependencies[] = rules
+dependencies[] = smtp
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = token_filter
+dependencies[] = video_filter
+dependencies[] = transliteration
+dependencies[] = variable
+dependencies[] = views_bulk_operations
+dependencies[] = wysiwyg
+dependencies[] = wysiwyg_fields
+dependencies[] = wysiwyg_filter
+
+dependencies[] = manati_editortexto
+
+
 dependencies[] = pantheon_api
 files[] = manati.profile
