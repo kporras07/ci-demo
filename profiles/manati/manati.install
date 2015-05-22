@@ -9,7 +9,12 @@
  * Implements hook_install().
  */
 function manati_install() {
+  include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
+  standard_install();
 
   // Enable Clean URL's.
   variable_set('clean_url', 1);
+
+  // Allow visitor account creation.
+  variable_set('user_register', USER_REGISTER_VISITORS);
 }
