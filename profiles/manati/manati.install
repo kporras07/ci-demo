@@ -17,4 +17,9 @@ function manati_install() {
 
   // Allow visitor account creation.
   variable_set('user_register', USER_REGISTER_VISITORS);
+
+  // Disable no needed modules.
+  $disable_modules = array('comment');
+  module_disable($disable_modules);
+  drupal_uninstall_modules($disable_modules);
 }
