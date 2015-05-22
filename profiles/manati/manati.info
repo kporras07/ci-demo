@@ -68,5 +68,6 @@ dependencies[] = pantheon_api
 dependencies[] = manati_editortexto
 
 ; Custom modules
+dependencies[] = manati_deploy
 
 files[] = manati.profile
