@@ -12,14 +12,24 @@ function manati_install() {
   include_once DRUPAL_ROOT . '/profiles/standard/standard.install';
   standard_install();
 
+  // Disable no needed modules.
+  $disable_modules = array('comment', 'dashboard');
+  module_disable($disable_modules);
+  drupal_uninstall_modules($disable_modules);
+
+  // Some custom settings.
+
   // Enable Clean URL's.
   variable_set('clean_url', 1);
 
   // Allow visitor account creation.
   variable_set('user_register', USER_REGISTER_VISITORS);
 
-  // Disable no needed modules.
-  $disable_modules = array('comment', 'dashboard');
-  module_disable($disable_modules);
-  drupal_uninstall_modules($disable_modules);
+  // Keep admin_menu at top of page false.
+  variable_set('admin_menu_position_fixed', 0);
+
+  // File system settings.
+  variable_set('file_public_path', 'sites/default/files');
+  variable_set('file_private_path', 'sites/default/files/private');
+  variable_set('file_temporary_path', '/tmp');
 }
