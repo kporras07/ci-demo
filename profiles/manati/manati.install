@@ -19,7 +19,7 @@ function manati_install() {
   variable_set('user_register', USER_REGISTER_VISITORS);
 
   // Disable no needed modules.
-  $disable_modules = array('comment');
+  $disable_modules = array('comment', 'dashboard');
   module_disable($disable_modules);
   drupal_uninstall_modules($disable_modules);
 }
