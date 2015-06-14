@@ -37,7 +37,7 @@ install:
 
 script:
   # stand up drupal
-  - cd kporras07/ci-demo
+  - cd /home/travis/kporras07/ci-demo
   - composer install
   - npm install && npm update
   - cd sites/all/themes/manati
