@@ -8,7 +8,7 @@ use Behat\Gherkin\Node\TableNode;
 /**
  * Defines application features from the specific context.
  */
-class FeatureContext extends \Drupal\DrupalExtension\Context\DrupalContext {
+class FeatureContext extends RawDrupalContext implements SnippetAcceptingContext {
 
   /**
    * Initializes context.
