@@ -49,6 +49,7 @@ script:
   # Run behat tests
   - cd $TRAVIS_BUILD_DIR
   - drush runserver --server=builtin 8082 --strict=0 &
+  - sleep 10
   - grunt
 after_script:
   - drush status
