@@ -37,7 +37,7 @@ install:
 
 script:
   # stand up drupal
-  - cd /home/travis/kporras07/ci-demo
+  - cd $TRAVIS_BUILD_DIR
   - composer install
   - npm install && npm update
   - cd sites/all/themes/manati
@@ -47,7 +47,7 @@ script:
   - drush updb -y && drush fra -y
   - drush cc all
   # Run behat tests
-  - cd ../../../../
+  - cd $TRAVIS_BUILD_DIR
   - grunt
 after_script:
   - drush status
