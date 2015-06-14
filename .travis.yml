@@ -64,8 +64,8 @@ notifications:
 #  irc: irc.freenode.org#elmsln
 
 #  email: false
-#  slack:
-#    rooms:
-#      - elmsln:WmKTRMe7k3IjprunaAVV3Jjg#qa
+  slack:
+    rooms:
+      - secure: "krMbpPDhjEkP7G8VPb2CHuxpDbu3gnP8GjJpZl6FWz74vAi1M+oZ3RNKVUANQ/9A/pX1BmnhcKnCPBOzrBuDdPO8xDuVQ9rTmSYu8ZYXDy2UHHD/r0awaORc8TyZ3JeSFmGYCKTZBbTOl2sijuVQe3s1MO+XvPKJHZE40KHEEK1ytjJ8b5bWXlvzGYhsuqW6nRKir/19lyb5yEPnWMaEAxwjacLyeZn2LxNUFYdzcAMJuVoiU/9zNUuHLrBk2P/+/cXNH3yhR6VESB2deSF3k/mlPN4rlMK/IMazx+XF13SB0qsx/30CMlcZSsVk1n2myxisCWsV0ITBjiWQDJcPsgdR0EgFhkXsBKWXuHO8dhRoT1UsmHVXLrL9D0ite3PF50fCOtDVYiHMuWm9tFGKo2xzKqcuhcHjkCY68Co9fmTP4uEgMIf2uGrmJhVWrsmcDCVwWtMbwLu5n5TcX2U1a4rhYUnAvmAwiHoX+pmb00b3XbaM6Kl45/Uz40PhZRZ19+MhvGkx4FdMcR33h+TcaqnXY6YYuPSHAn4Cx9c72xn5rTsJ1EWWcKJBtv2kIxTfss0k7tB+UQHXvSJyQfmIyWrTsZ10PG97td2p1+IS1VzZmeIbqyCqDiUjBLSXmILE4ps9WNmCMXv/UWCGBFG+5oZTedIOh/AmEybA041l1AY="
 #      - elmsln:WmKTRMe7k3IjprunaAVV3Jjg#code
 
