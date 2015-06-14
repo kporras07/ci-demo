@@ -3,35 +3,22 @@ language: php
 php:
   - 5.4
 
-matrix:
-  env:
-    global:
-      - ES_VER=1.0.1
-      - ES_MAPPER_ATTACHMENTS_VER=2.0.0.RC1
-      - ES_TRANSPORT_THRIFT_VER=2.0.0.RC1
-      - ES_GEOCLUSTER_FACET_VER=0.0.10
-      - ES_WAIT_ON_MAPPING_CHANGE=true
-      - DATABASE='drupal'
-      - DB_USERNAME='root'
-      - DB_ENCODE='utf8'
-    matrix:
-      - DRUPAL_3RD_PARTY='composer_manager'
-      - DRUPAL_3RD_PARTY='libraries'
-
+env:
+  - PNAME='demo-ci'
+  - PSITE='demo-ci'
+  - PUUID='445bb8f4-2088-4b79-9f2a-f436a18e683c'
+  - PSOURCE='dev'
 mysql:
   database: $DATABASE
   username: $DB_USERNAME
   encoding: $DB_ENCODE
 
 before_install:
-  - export UPDATE TRAVIS_BUILD_DIR
-  - BUILD_TOP=`dirname $TRAVIS_BUILD_DIR`
-  - EXIT_VALUE=0
-
   - sudo apt-get update > /dev/null
 
   - composer self-update
 install:
+  - echo "StrictHostKeyChecking no" > ~/.ssh/config
     # install php packages required for running a web server from drush on php 5.3
   - sudo apt-get install -y --force-yes php5-cgi php5-mysql
 
@@ -41,16 +28,14 @@ install:
   # add composer's global bin directory to the path
   # see: https://github.com/drush-ops/drush#install---composer
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
-before_script:
-  #- echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
-  # establish drupal package put in place the right way
-  - sudo mkdir -p /var/www
-  - sudo chown travis:travis /var/www
-  - git clone https://github.com/kporras07/ci-demo.git /var/www/drupal
+  # Install terminus.
+  - git clone https://github.com/pantheon-systems/terminus.git $HOME/.drush/terminus
+  - cd $HOME/.drush/terminus
+  - composer update --no-dev
+  - drush cc drush
 
 script:
   # stand up drupal
-  - cd /var/www/drupal
   - composer install
   - npm install && npm update
   - cd sites/all/themes/manati
@@ -60,7 +45,7 @@ script:
   - drush updb -y && drush fra -y
   - drush cc all
   # Run behat tests
-  - cd /var/www/drupal
+  - cd ../../../../
   - grunt
 after_script:
   - drush status
