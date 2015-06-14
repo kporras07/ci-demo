@@ -1,0 +1,22 @@
+default:
+  suites:
+    default:
+      contexts:
+        - FeatureContext
+        - Drupal\DrupalExtension\Context\DrupalContext
+        - Drupal\DrupalExtension\Context\MinkContext
+
+  extensions:
+    Behat\MinkExtension:
+      goutte: ~
+      selenium2:
+        wd_host: "http://localhost:8643/wd/hub"
+      base_url: http://localhost
+      javascript_session: 'selenium2'
+    Drupal\DrupalExtension:
+      blackbox: ~
+      drush:
+        alias: 'local'
+      drupal:
+        drupal_root: './'
+      api_driver: 'drupal'
