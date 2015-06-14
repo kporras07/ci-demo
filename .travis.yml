@@ -4,10 +4,11 @@ php:
   - 5.4
 
 env:
-  - PNAME='demo-ci'
-  - PSITE='demo-ci'
-  - PUUID='445bb8f4-2088-4b79-9f2a-f436a18e683c'
-  - PSOURCE='dev'
+  global:
+    - PNAME='demo-ci'
+    - PSITE='demo-ci'
+    - PUUID='445bb8f4-2088-4b79-9f2a-f436a18e683c'
+    - PSOURCE='dev'
 mysql:
   database: $DATABASE
   username: $DB_USERNAME
