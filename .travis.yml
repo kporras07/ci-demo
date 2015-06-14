@@ -55,7 +55,7 @@ script:
   - npm install && npm update
   - cd sites/all/themes/manati
   - npm install && npm update
-  - drush site-install -y --db-url=mysql://root@localhost/travisdb --db-su='root' --db-su-pw=''
+  - drush site-install manati -y --db-url=mysql://root@localhost/travisdb --db-su='root' --db-su-pw=''
   - drush en -y manati_deploy
   - drush updb -y && drush fra -y
   - drush cc all
