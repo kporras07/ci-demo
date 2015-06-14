@@ -34,6 +34,7 @@ install:
   - cd $HOME/.drush/terminus
   - composer update --no-dev
   - drush cc drush
+  - echo "sendmail_path='true'" >> `php --ini | grep "Loaded Configuration" | awk '{print $4}'`
 
 script:
   # stand up drupal
@@ -42,12 +43,12 @@ script:
   - npm install && npm update
   - cd sites/all/themes/manati
   - npm install && npm update
-  - drush site-install manati -y --db-url=mysql://root@localhost/travisdb --db-su='root' --db-su-pw=''
-  - drush en -y manati_deploy
+  - drush site-install manati -y --db-url=mysql://root@localhost/cidemo --db-su='root' --db-su-pw=''
   - drush updb -y && drush fra -y
   - drush cc all
   # Run behat tests
   - cd $TRAVIS_BUILD_DIR
+  - drush runserver --server=builtin 8080 --strict=0 &
   - grunt
 after_script:
   - drush status
