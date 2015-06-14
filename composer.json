@@ -1,0 +1,11 @@
+{
+    "name": "DCCR/Drupal-Camp-2015",
+    "description": "Drupal-Camp-2015",
+    "require": {
+        "behat/mink": "1.5.*@stable",
+        "behat/mink-goutte-driver": "*",
+        "behat/mink-selenium2-driver": "*",
+        "drupal/drupal-extension": "*",
+        "behat/mink-extension": "dev-master"
+    }
+}
