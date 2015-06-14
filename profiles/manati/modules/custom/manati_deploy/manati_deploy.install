@@ -10,6 +10,7 @@
  */
 function manati_deploy_install() {
   // Do your custom stuff here.
+  variable_set('theme_default', 'manati');
 }
 
 /**
