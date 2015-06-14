@@ -1,0 +1,65 @@
+language: php
+
+php:
+  - 5.4
+
+env:
+  global:
+    - PNAME='demo-ci'
+    - PSITE='demo-ci'
+    - PUUID='445bb8f4-2088-4b79-9f2a-f436a18e683c'
+    - PSOURCE='dev'
+mysql:
+  database: $DATABASE
+  username: $DB_USERNAME
+  encoding: $DB_ENCODE
+
+before_install:
+  - sudo apt-get update > /dev/null
+
+  - composer self-update
+install:
+  - echo "StrictHostKeyChecking no" > ~/.ssh/config
+    # install php packages required for running a web server from drush on php 5.3
+  - sudo apt-get install -y --force-yes php5-cgi php5-mysql
+
+  # install drush globally
+  - composer global require drush/drush:7.*
+
+  # add composer's global bin directory to the path
+  # see: https://github.com/drush-ops/drush#install---composer
+  - export PATH="$HOME/.composer/vendor/bin:$PATH"
+  # Install terminus.
+  - git clone https://github.com/pantheon-systems/terminus.git $HOME/.drush/terminus
+  - cd $HOME/.drush/terminus
+  - composer update --no-dev
+  - drush cc drush
+  - echo "sendmail_path='true'" >> `php --ini | grep "Loaded Configuration" | awk '{print $4}'`
+
+script:
+  # stand up drupal
+  - cd $TRAVIS_BUILD_DIR
+  - composer install
+  - npm install && npm update
+  - cd sites/all/themes/manati
+  - npm install && npm update
+  - drush site-install manati -y --db-url=mysql://root@localhost/cidemo --db-su='root' --db-su-pw='' --site-name='CI-Demo'
+  - drush updb -y && drush fra -y
+  - drush cc all
+  # Run behat tests
+  - cd $TRAVIS_BUILD_DIR
+  - drush runserver --server=builtin 8082 --strict=0 &
+  - sleep 10
+  - grunt
+after_script:
+  - drush status
+
+notifications:
+#  irc: irc.freenode.org#elmsln
+
+#  email: false
+#  slack:
+#    rooms:
+#      - elmsln:WmKTRMe7k3IjprunaAVV3Jjg#qa
+#      - elmsln:WmKTRMe7k3IjprunaAVV3Jjg#code
+
