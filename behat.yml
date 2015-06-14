@@ -11,7 +11,7 @@ default:
       goutte: ~
       selenium2:
         wd_host: "http://127.0.0.1:8643/wd/hub"
-      base_url: http://127.0.0.1:8080
+      base_url: http://127.0.0.1:8082
       javascript_session: 'selenium2'
     Drupal\DrupalExtension:
       blackbox: ~
