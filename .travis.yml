@@ -6,7 +6,7 @@ source_key: "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQ0KTUlJSkpBSUJBQUtDQWdBTVp
 
 env:
   global:
-    - PNAME='demo-ci'
+    - PNAME='ci-demo'
     - PSITE=$(cat /dev/urandom | tr -cd 'a-z0-9' | head -c 4)
     - PSITE="ci$TRAVIS_BUILD_NUMBER-$PSITE"
     - PUUID='445bb8f4-2088-4b79-9f2a-f436a18e683c'
