@@ -56,7 +56,7 @@ after_script:
 after_success:
   - echo $TRAVIS_BRANCH
   - echo $TRAVIS_PULL_REQUEST
-  - if [ $TRAVIS_BRANCH != 'master' ] && [ $TRAVIS_PULL_REQUEST != 'false' ] ; then git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git && git push pantheon $TRAVIS_BRANCH && drush psite-ecreate $PUUID $TRAVIS_BRANCH --source=$PSOURCE || true && drush paliases && drush cc drush && cd $HOME && drush @pantheon.$PNAME.$TRAVIS_BRANCH updb -y --strict=0 && drush @pantheon.$PNAME.$TRAVIS_BRANCH fra -y --strict=0 ; fi
+  - if [ $TRAVIS_BRANCH = 'master' ] && [ $TRAVIS_PULL_REQUEST != 'false' ] ; then git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git && git push pantheon $TRAVIS_BRANCH && drush psite-ecreate $PUUID $TRAVIS_BRANCH --source=$PSOURCE || true && drush paliases && drush cc drush && cd $HOME && drush @pantheon.$PNAME.$TRAVIS_BRANCH updb -y --strict=0 && drush @pantheon.$PNAME.$TRAVIS_BRANCH fra -y --strict=0 ; fi
   - if [ $TRAVIS_BRANCH = 'master' ] && [ $TRAVIS_PULL_REQUEST = 'false' ] ; then git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git && git push pantheon $TRAVIS_BRANCH && drush paliases && drush cc drush && cd $HOME && drush @pantheon.$PNAME.$TRAVIS_BRANCH updb -y --strict=0 && drush @pantheon.$PNAME.$TRAVIS_BRANCH fra -y --strict=0 ; fi
 notifications:
 #  irc: irc.freenode.org#elmsln
