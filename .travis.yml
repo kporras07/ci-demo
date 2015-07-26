@@ -31,10 +31,7 @@ install:
   # see: https://github.com/drush-ops/drush#install---composer
   - export PATH="$HOME/.composer/vendor/bin:$PATH"
   # Install terminus.
-  - git clone https://github.com/pantheon-systems/terminus.git $HOME/.drush/terminus
-  - cd $HOME/.drush/terminus
-  - composer update --no-dev
-  - drush cc drush
+  - sudo curl https://github.com/pantheon-systems/cli/releases/download/0.5.5/terminus.phar -L -o /usr/local/bin/terminus && sudo chmod +x /usr/local/bin/terminus
   - echo "sendmail_path='true'" >> `php --ini | grep "Loaded Configuration" | awk '{print $4}'`
 
 script:
@@ -59,9 +56,9 @@ after_success:
   - echo $TRAVIS_BRANCH
   - echo $TRAVIS_PULL_REQUEST
   # Authenticate with Pantheon via Terminus.
-  - drush pauth $PEMAIL --password=$PPASS
-  - if [ $TRAVIS_BRANCH = 'master' ] && [ $TRAVIS_PULL_REQUEST != 'false' ] ; then git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git && git checkout -b $PSITE && git push --force pantheon $PSITE && drush psite-ecreate $PUUID $PSITE --source=$PSOURCE || true && drush paliases && drush cc drush && cd $HOME && drush @pantheon.$PNAME.$PSITE updb -y --strict=0 && drush @pantheon.$PNAME.$PSITE fra -y --strict=0 ; fi
-  - if [ $TRAVIS_BRANCH = 'master' ] && [ $TRAVIS_PULL_REQUEST = 'false' ] ; then git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git && git push pantheon $TRAVIS_BRANCH && drush paliases && drush cc drush && cd $HOME && drush @pantheon.$PNAME.$TRAVIS_BRANCH updb -y --strict=0 && drush @pantheon.$PNAME.$TRAVIS_BRANCH fra -y --strict=0 ; fi
+  - terminus auth login $PEMAIL --password=$PPASS
+  - if [ $TRAVIS_BRANCH = 'master' ] && [ $TRAVIS_PULL_REQUEST != 'false' ] ; then git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git && git checkout -b $PSITE && git push --force pantheon $PSITE && terminus site create-env --site=$PNAME --env=$PSITE --from-env=$PSOURCE && terminus sites aliases && drush cc drush && cd $HOME && drush @pantheon.$PNAME.$PSITE updb -y --strict=0 && drush @pantheon.$PNAME.$PSITE fra -y --strict=0 && terminus site clear-caches --site=$PNAME --env=$PSITE ; fi
+  - if [ $TRAVIS_BRANCH = 'master' ] && [ $TRAVIS_PULL_REQUEST = 'false' ] ; then git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git && git push pantheon $TRAVIS_BRANCH && terminus sites aliases && drush cc drush && cd $HOME && drush @pantheon.$PNAME.$TRAVIS_BRANCH updb -y --strict=0 && drush @pantheon.$PNAME.$TRAVIS_BRANCH fra -y --strict=0 ; fi
 notifications:
 #  irc: irc.freenode.org#elmsln
 
