@@ -24,7 +24,7 @@ install:
   -L -o /usr/local/bin/terminus && sudo chmod +x /usr/local/bin/terminus
 - echo "sendmail_path='true'" >> `php --ini | grep "Loaded Configuration" | awk '{print
   $4}'`
-script:
+before_script:
 - cd $TRAVIS_BUILD_DIR
 - composer install
 - npm install && npm update
@@ -37,12 +37,12 @@ script:
 - cd $TRAVIS_BUILD_DIR
 - drush runserver --server=builtin 8082 --strict=0 &
 - sleep 10
+script:
+- cd $TRAVIS_BUILD_DIR
 - grunt
 after_script:
 - drush status
 after_success:
-- echo $TRAVIS_BRANCH
-- echo $TRAVIS_PULL_REQUEST
 - terminus auth login $PEMAIL --password=$PPASS
 - if [ $TRAVIS_BRANCH = 'master' ] && [ $TRAVIS_PULL_REQUEST != 'false' ] ; then git
   remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git
