@@ -4,4 +4,4 @@ Feature: homepage initial setup
   @homepage
   Scenario: Find 'Welcome to CI-Demo' text in homepage.
      Given I am on homepage
-      Then I should see "Welcome to CI-Demo"
+      Then I should see "Wlcome to CI-Demo"
