@@ -1,70 +1,62 @@
 language: php
-
 php:
-  - 5.4
-source_key: "LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQ0KTUlJSkpBSUJBQUtDQWdBTVpzb2hHN1FzbjVDRWJydkFjVVpRYVZWbkNwUUxuYmY3dndOeUsxejhvOEE4Z2VGZA0KcG9MWGhMUm5RMkxBSk91NVp0TmMycTlWY3pWTTNWUWtoUzNZVDBKVGRsSVp3VHF1ZVJNOTNKaFAyY0dDSmpncQ0KZWhhbUpuQ0FJbXJZb29YbkVFOXpxWUd1Q01OQUVvT2lBQUpvTkEzZ0d2Uk5MNUVsS3N6WDJkQWxjeTQ2bE1iSQ0KL3FJeTIwYTgxZU1qbE9sTkFLT1NJN3k3bUt4SGtaanVPQzZWNGdjNTVPNWV6V29DZ0ljRUoxSGZqclhPTEd4aA0Kbk1NUVhOMHVvWHRVSlI0QzdiWjBBY1lNNHF2S3ZTd3hPVzdHV1NNajZzV0FQTFArWlZIRlJhYkQ0ZUsyRVBGNA0KeHA1ZG5rRFBhc3NFbnJic2RwSDU5bnA5anB3ZFFPai90ZDdXbktaY0szMGIxVEw3NldKNHIzcmdOdHRQc0sySw0KRkpkdDZGU1pSNENsZXFPcDRKMXB0SUxKSE5wOHdPSkkrTHdJcWszQ1ZBYXVkdnR2TVNjM3FhbFVhQzgzL2FlUg0KNFVrejBxTEMzeSt3Y2hhOG4zbG9yYUNGbTczZjd4aXNvNFdmNHNPMVdtREo5aURlSGUxbEtlYXFvT0syT0ZQNw0KNzVOUDlrSlBNclYxUWZzWGg3Vy84N1c3N2N5NUJ3UWtaYXljR1ZOYmNwa0VreWZPWGN3MlNSK0czNy9QR1c3VA0KZ3NmUXdtdGJneFFuNi83eUwxV2h6K0FYVHBERzZMOE5POThUem03YjZvRFVoQ2RhSFJlM1VqVEEwYTc4bk5OdA0KNGhBRmh3aDJmejlmanF2S2hXVldXNGRITjlid2ZDWXJrR3pEanhrNzNuVVVLT09JQVhVWTF2cHI5UUlEQVFBQg0KQW9JQ0FBY2N4SHZzZVk3R0RJb0hQK0tFbElEMWlDZEtaOUdwcUtUV3pkRWlrWGZMS2lzSmlnaTl3SGgrQVVEZg0KNHJpejlBVW10YjJoSmNGcUMzMkR5Z2dQNFZVWFQ4Q3lNUy9ZSkNHQUNzc0Z3c3k0NUVRU1MxQUJLUkF0SjRRMQ0KT1BYNWI3WXZJb0lCQ3dDV3dmUHpLazgwbGl6US9jd3phVDBETk1rT0hPRUdhRnV5RFNkSHdDSHg5M0FYVmlCaQ0Kd3B2YmdWbktMZ1ZZUFp1UldlekowZDE5bHlvYXNXNUFuM3o3YmZyMVgzbkFXekpObEhNa0F4eVFYVWI3RzFidA0KQWVBbVVXbjRqeFZGRnlLNHRUSFhBSXRTbHZkbWs4SzdtSDJOVXVWcGtsWUROanROUjBxSHVSVTlSQUlKQ3I1cQ0KVHZqZFZhZVQ4UEJjcmE5b3BKd2FhQWFQZGJkNjJSZkFSOGxvVHlLY01UZS9RUURrc0x2cVRjNFZUanEwZUpGaA0KSDRlNkNSSklxbnhKUkk1NkJHZ3oxZkVpVXhzcjE2ZllLbStEbXpOcTZWRVBtSEUxWTFHWFZ0ZUxOUXhMRWdMRQ0KUzRhd1lKTkI1QnFhck9FM2JCN2JtRmJCZG5yNEszQURsQ2VETVlqNEU5MVZNRWN6UVk4V2hVZVZnQWNVRDVBRw0KYmllY2ZvSXltZWZISnNZMUZlZ2FDVGlYVmJoenBHd0Z3ZnZ2V3hPeGtZNUdNZ0Rsb0ltSUppd0lQOUFLeXRjNg0KbmVMQlhuWnU1cTlKVTl5ZUZvbWVINnd3YVc5NlRhNDhPRElmRGw5UFhac25sTHg0MG9MOG1NWU5FeWpoYjJybQ0KYzFFNFIvN01uREEvQi96WWN2ZmN0YVZPL3pKd1lFbFdkVERZaEZxckhpWHJTSTJCQW9JQkFEemd0dVdSYXRkYw0KSVY3bTE1UlV4am84M0hvckg2UU5yTUZySVhXbzdmeUoxbC9PbWY3b0IwSjlpTW9sbGZoUXhzKytnNTQwemExMQ0KamxiL0l3eTRSNFR4bXVwQ25qV2NvWkZ5VlVZNytIdTQ3bVZoeGVvT2lpSm1uN2I0WjVFYm1JR1BPY29OSzBiZw0KSGlMWDdYRW1od0swZnVYNlkrWDcwaDRTc04vcGRJUTdpbzRyVlhrMjZ6azNWd1A5c1BzcVJDSVh5a2xtNWFETA0KTCtkMmd1SWNBelV6V0QrbndCQTE3N0o1T1l5cHJIOUxoS3orK0lROEVvT1Y0cWUrOXlSNTFyelNRbnE5SndqSw0KN3NwakdwcjJQeFZVelhROG85bFR2Q1hPYTduK2YwU1dtU3drRkJQRGtEYXQ1bTlmTkVpSzRTbWVkdVZHZXVudQ0KUmVzTWVaZ3l3UVVDZ2dFQU5DWjBKL2dGZ0p1UVpvV1M2SnNTeStHeXZVTFd2Y1h6VVVFZ2tvSGd6N1NWcVIrLw0KVXQyb05salo2cTQ1MkV6ZXFqSUxjNVphQ1lQQ2l0RUZtK0hwSlBvdzhHanNhT0dHRnR6K2NHa2laSGNYTmY4Vg0KM1lZYXhvY3kzeHgwQjFTOEM0dm9jNjJna2FHaEQ3QTdkc2dKakdLSlJZcnVzaWQ1SVhEMmlrZElWYUkrcmxpVg0KYjNVczJLQjJrV1R4YXFnbzlkTGJOWnIvM1poRzBEUnZ6REpkN0FHM0lQRUVaR3JrQnh6Wjlib3M5MmdINUlUYQ0KUU5FaXJodGgzMUkyTmpLVUtCZ0tBcDhJSzFQdUg4c2p1dHJSNTU5N0tZdFFvcE0rV3YvWW9PVUN6MzFDR1lZbg0KVTlpQXhhSU9TZUFxckMycS9CRWVVTXUwKzRVL3pYaHVKRGF5TVFLQ0FRQXpURWZSK2s5RldlVGt5ekF0VmFJVA0Kd09Vb0xONWtwd0ZEbXJwL0l2SW5NeDdwYkhablRhMlFZYWU2YnlHSU5NalNsWDdpK1N1M1ZxK3lyeHNoeE1hLw0KUjdkNlh0aGg1TEpnbFM4MkY2S3kzb3BEODdlS0d1WmJSbzZlNTRLZHk5c2VrVW5vOEYvZlFVc2pvVC83Y0xPag0KbStTeWRlTm9FR0psNU9vV1ErcGk0cWxHVTAyYTdxUVhlb0pnWW8yWGwyNENMSG5Ra0Z3K3VmaUwybGsvbnNzMQ0KTVNiVHZNOGkyZEE1VzkwYW9uOHdaTHBQN0NvTmczRTJZRDYxaXoxR0IwVGpwMmxOYzhaSXFuZTlJdlZ3VHIrcA0KZ2VQK1puckt6cnhrUHlTWGZkUlFQM2FpczJRWG8xc0tPRTlNMmJSOHpFb2ZmK0JBSXJ2QUUzL25LSVB0dEJiaA0KQW9JQkFCb0JNdHJiYXFMKzc3cXYwTm44dWhyQXFRaUhVOTI5Mzk4Y3dzbEx5bmJJYmZpdnhBL21TQU1SdTFpeg0KR0ZVcnY3ek94N2NUdWtJVVdlWXU1TVVlbWN1K2xyakxHVmdUWFhINU1VZU1wWUhEZ09lRUU3c3JMQjdqUEJMVg0KZFdaU2NwS3ZhWEtGbWhRRXJQUE54Vmt0MXRVU0xiRm4zaThvVDliRkphcytjR3VEUkE1Y1RlZ09YaGFIclpoQw0KNWI5eHF6c3BzZlhCSE9XN0VWU3hVUzVaejB2b2J4RVdIa0tVcXJDQlNvNm1EOVl2SWdCcDN3dURQZS9qNTZJYw0KdEx2QjdPOHhUWXlSRU5uS09HdlNPRGJzOXM2eFVCRWZUMDVDYmsyaVZydWtkd3BRUTYzR244WEhxQzdrNklzZQ0KSlNsR2ZJVEZaSUNWaytINFNDQ0ZkU2JKdjRFQ2dnRUFJWE05ZlBFOHBMeGtWZ1lLZjQyZzRMcjRTWXk2Y0lUKw0KWGFoTy9GWEdPZ3lsS0lyOHBwZHh6VlJqK052S2tHQWE1VTRZQ0taRkxvakJMN2Z0cm5SN2FmamQyRm5oMkJ0bA0KOTVBR0NqRFZGWk9vcXZiSUZTTUQ2cUtaQjQzQU9NdUlobU1JcHpLb3VtNTZTSDVvK1ZnWkp4Z1BtTSt2dHFuUg0KRGs2UTIwR0VLYTNkUkJaZGloQWV4TUVNbStEV3hjLzFvVDJTRzJIbE8wYVJ1REF4TEd4ZkJ1a2x0ZzRvak1HWg0KTWZjak54d1ZFWlJXMGlQVVR2ZEVCRHFpWnV6akNNSVhtQjVaVEVnTTZ0amlJRDNOTkRKV1U3UUE1UTlwdjdmaA0KMksrV2o2b1ZpVEtZTjgxSmV5bWc4OW0yVHY2b3BYN0tvaE9FU0xsOE44a2MzcWYvUkZhTFRRPT0NCi0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0t"
-
+- 5.4
+source_key: LS0tLS1CRUdJTiBSU0EgUFJJVkFURSBLRVktLS0tLQ0KTUlJSkpBSUJBQUtDQWdBTVpzb2hHN1FzbjVDRWJydkFjVVpRYVZWbkNwUUxuYmY3dndOeUsxejhvOEE4Z2VGZA0KcG9MWGhMUm5RMkxBSk91NVp0TmMycTlWY3pWTTNWUWtoUzNZVDBKVGRsSVp3VHF1ZVJNOTNKaFAyY0dDSmpncQ0KZWhhbUpuQ0FJbXJZb29YbkVFOXpxWUd1Q01OQUVvT2lBQUpvTkEzZ0d2Uk5MNUVsS3N6WDJkQWxjeTQ2bE1iSQ0KL3FJeTIwYTgxZU1qbE9sTkFLT1NJN3k3bUt4SGtaanVPQzZWNGdjNTVPNWV6V29DZ0ljRUoxSGZqclhPTEd4aA0Kbk1NUVhOMHVvWHRVSlI0QzdiWjBBY1lNNHF2S3ZTd3hPVzdHV1NNajZzV0FQTFArWlZIRlJhYkQ0ZUsyRVBGNA0KeHA1ZG5rRFBhc3NFbnJic2RwSDU5bnA5anB3ZFFPai90ZDdXbktaY0szMGIxVEw3NldKNHIzcmdOdHRQc0sySw0KRkpkdDZGU1pSNENsZXFPcDRKMXB0SUxKSE5wOHdPSkkrTHdJcWszQ1ZBYXVkdnR2TVNjM3FhbFVhQzgzL2FlUg0KNFVrejBxTEMzeSt3Y2hhOG4zbG9yYUNGbTczZjd4aXNvNFdmNHNPMVdtREo5aURlSGUxbEtlYXFvT0syT0ZQNw0KNzVOUDlrSlBNclYxUWZzWGg3Vy84N1c3N2N5NUJ3UWtaYXljR1ZOYmNwa0VreWZPWGN3MlNSK0czNy9QR1c3VA0KZ3NmUXdtdGJneFFuNi83eUwxV2h6K0FYVHBERzZMOE5POThUem03YjZvRFVoQ2RhSFJlM1VqVEEwYTc4bk5OdA0KNGhBRmh3aDJmejlmanF2S2hXVldXNGRITjlid2ZDWXJrR3pEanhrNzNuVVVLT09JQVhVWTF2cHI5UUlEQVFBQg0KQW9JQ0FBY2N4SHZzZVk3R0RJb0hQK0tFbElEMWlDZEtaOUdwcUtUV3pkRWlrWGZMS2lzSmlnaTl3SGgrQVVEZg0KNHJpejlBVW10YjJoSmNGcUMzMkR5Z2dQNFZVWFQ4Q3lNUy9ZSkNHQUNzc0Z3c3k0NUVRU1MxQUJLUkF0SjRRMQ0KT1BYNWI3WXZJb0lCQ3dDV3dmUHpLazgwbGl6US9jd3phVDBETk1rT0hPRUdhRnV5RFNkSHdDSHg5M0FYVmlCaQ0Kd3B2YmdWbktMZ1ZZUFp1UldlekowZDE5bHlvYXNXNUFuM3o3YmZyMVgzbkFXekpObEhNa0F4eVFYVWI3RzFidA0KQWVBbVVXbjRqeFZGRnlLNHRUSFhBSXRTbHZkbWs4SzdtSDJOVXVWcGtsWUROanROUjBxSHVSVTlSQUlKQ3I1cQ0KVHZqZFZhZVQ4UEJjcmE5b3BKd2FhQWFQZGJkNjJSZkFSOGxvVHlLY01UZS9RUURrc0x2cVRjNFZUanEwZUpGaA0KSDRlNkNSSklxbnhKUkk1NkJHZ3oxZkVpVXhzcjE2ZllLbStEbXpOcTZWRVBtSEUxWTFHWFZ0ZUxOUXhMRWdMRQ0KUzRhd1lKTkI1QnFhck9FM2JCN2JtRmJCZG5yNEszQURsQ2VETVlqNEU5MVZNRWN6UVk4V2hVZVZnQWNVRDVBRw0KYmllY2ZvSXltZWZISnNZMUZlZ2FDVGlYVmJoenBHd0Z3ZnZ2V3hPeGtZNUdNZ0Rsb0ltSUppd0lQOUFLeXRjNg0KbmVMQlhuWnU1cTlKVTl5ZUZvbWVINnd3YVc5NlRhNDhPRElmRGw5UFhac25sTHg0MG9MOG1NWU5FeWpoYjJybQ0KYzFFNFIvN01uREEvQi96WWN2ZmN0YVZPL3pKd1lFbFdkVERZaEZxckhpWHJTSTJCQW9JQkFEemd0dVdSYXRkYw0KSVY3bTE1UlV4am84M0hvckg2UU5yTUZySVhXbzdmeUoxbC9PbWY3b0IwSjlpTW9sbGZoUXhzKytnNTQwemExMQ0KamxiL0l3eTRSNFR4bXVwQ25qV2NvWkZ5VlVZNytIdTQ3bVZoeGVvT2lpSm1uN2I0WjVFYm1JR1BPY29OSzBiZw0KSGlMWDdYRW1od0swZnVYNlkrWDcwaDRTc04vcGRJUTdpbzRyVlhrMjZ6azNWd1A5c1BzcVJDSVh5a2xtNWFETA0KTCtkMmd1SWNBelV6V0QrbndCQTE3N0o1T1l5cHJIOUxoS3orK0lROEVvT1Y0cWUrOXlSNTFyelNRbnE5SndqSw0KN3NwakdwcjJQeFZVelhROG85bFR2Q1hPYTduK2YwU1dtU3drRkJQRGtEYXQ1bTlmTkVpSzRTbWVkdVZHZXVudQ0KUmVzTWVaZ3l3UVVDZ2dFQU5DWjBKL2dGZ0p1UVpvV1M2SnNTeStHeXZVTFd2Y1h6VVVFZ2tvSGd6N1NWcVIrLw0KVXQyb05salo2cTQ1MkV6ZXFqSUxjNVphQ1lQQ2l0RUZtK0hwSlBvdzhHanNhT0dHRnR6K2NHa2laSGNYTmY4Vg0KM1lZYXhvY3kzeHgwQjFTOEM0dm9jNjJna2FHaEQ3QTdkc2dKakdLSlJZcnVzaWQ1SVhEMmlrZElWYUkrcmxpVg0KYjNVczJLQjJrV1R4YXFnbzlkTGJOWnIvM1poRzBEUnZ6REpkN0FHM0lQRUVaR3JrQnh6Wjlib3M5MmdINUlUYQ0KUU5FaXJodGgzMUkyTmpLVUtCZ0tBcDhJSzFQdUg4c2p1dHJSNTU5N0tZdFFvcE0rV3YvWW9PVUN6MzFDR1lZbg0KVTlpQXhhSU9TZUFxckMycS9CRWVVTXUwKzRVL3pYaHVKRGF5TVFLQ0FRQXpURWZSK2s5RldlVGt5ekF0VmFJVA0Kd09Vb0xONWtwd0ZEbXJwL0l2SW5NeDdwYkhablRhMlFZYWU2YnlHSU5NalNsWDdpK1N1M1ZxK3lyeHNoeE1hLw0KUjdkNlh0aGg1TEpnbFM4MkY2S3kzb3BEODdlS0d1WmJSbzZlNTRLZHk5c2VrVW5vOEYvZlFVc2pvVC83Y0xPag0KbStTeWRlTm9FR0psNU9vV1ErcGk0cWxHVTAyYTdxUVhlb0pnWW8yWGwyNENMSG5Ra0Z3K3VmaUwybGsvbnNzMQ0KTVNiVHZNOGkyZEE1VzkwYW9uOHdaTHBQN0NvTmczRTJZRDYxaXoxR0IwVGpwMmxOYzhaSXFuZTlJdlZ3VHIrcA0KZ2VQK1puckt6cnhrUHlTWGZkUlFQM2FpczJRWG8xc0tPRTlNMmJSOHpFb2ZmK0JBSXJ2QUUzL25LSVB0dEJiaA0KQW9JQkFCb0JNdHJiYXFMKzc3cXYwTm44dWhyQXFRaUhVOTI5Mzk4Y3dzbEx5bmJJYmZpdnhBL21TQU1SdTFpeg0KR0ZVcnY3ek94N2NUdWtJVVdlWXU1TVVlbWN1K2xyakxHVmdUWFhINU1VZU1wWUhEZ09lRUU3c3JMQjdqUEJMVg0KZFdaU2NwS3ZhWEtGbWhRRXJQUE54Vmt0MXRVU0xiRm4zaThvVDliRkphcytjR3VEUkE1Y1RlZ09YaGFIclpoQw0KNWI5eHF6c3BzZlhCSE9XN0VWU3hVUzVaejB2b2J4RVdIa0tVcXJDQlNvNm1EOVl2SWdCcDN3dURQZS9qNTZJYw0KdEx2QjdPOHhUWXlSRU5uS09HdlNPRGJzOXM2eFVCRWZUMDVDYmsyaVZydWtkd3BRUTYzR244WEhxQzdrNklzZQ0KSlNsR2ZJVEZaSUNWaytINFNDQ0ZkU2JKdjRFQ2dnRUFJWE05ZlBFOHBMeGtWZ1lLZjQyZzRMcjRTWXk2Y0lUKw0KWGFoTy9GWEdPZ3lsS0lyOHBwZHh6VlJqK052S2tHQWE1VTRZQ0taRkxvakJMN2Z0cm5SN2FmamQyRm5oMkJ0bA0KOTVBR0NqRFZGWk9vcXZiSUZTTUQ2cUtaQjQzQU9NdUlobU1JcHpLb3VtNTZTSDVvK1ZnWkp4Z1BtTSt2dHFuUg0KRGs2UTIwR0VLYTNkUkJaZGloQWV4TUVNbStEV3hjLzFvVDJTRzJIbE8wYVJ1REF4TEd4ZkJ1a2x0ZzRvak1HWg0KTWZjak54d1ZFWlJXMGlQVVR2ZEVCRHFpWnV6akNNSVhtQjVaVEVnTTZ0amlJRDNOTkRKV1U3UUE1UTlwdjdmaA0KMksrV2o2b1ZpVEtZTjgxSmV5bWc4OW0yVHY2b3BYN0tvaE9FU0xsOE44a2MzcWYvUkZhTFRRPT0NCi0tLS0tRU5EIFJTQSBQUklWQVRFIEtFWS0tLS0t
 env:
   global:
-    - PNAME='ci-demo'
-    - PSITE=$(cat /dev/urandom | tr -cd 'a-z0-9' | head -c 4)
-    - PSITE="ci$TRAVIS_BUILD_NUMBER-$PSITE"
-    - PUUID='445bb8f4-2088-4b79-9f2a-f436a18e683c'
-    - PSOURCE='dev'
-    - secure: "RyO2KV7404nXZCoEPgld9Mr1TBLPOBC0itjyqrF0EcoU1hC8641A0s/OU+emVGvBskdA+b5HZUprF561C060AgOVftiYxzMYTOTT/YDbdTCuIpRKx3arKMRUc9T+1NKEvMFAyAx56l7jX5bobFp3W1KMHhLny/8UJ+osJ5CBRoy0DTYSS85whBMhJb0AHIXTf2umVbpZ8qxn4CfALxV6eohGKilGc19JDVqdvP6qFHsHErNYeRnE2Jp8Oo/viVUWWxePMRf/n/RlyUjwr7Od17dSwDI7cAValRAQ43zFYPsFiNMUBlWKubKqM9laG6n2vZ1ZhmRb4DV8iRXfinzpQRDsDJ7sRGiZ4jnRNBVTpdpGfVPGX23M7b1hR/c67R3oLr+CFsJmMnR3rOWK4a/tb7dcTMzE++f8Myf0SyZrhlddHTjqQKqNLZa5jVQsO+j6dWRWtmpDgXX1/85ScwiETf6/iyaoYB61ghGm7I7uloxC8JBE2GtUN/QxUzY4uaBd1xRRocGty/m6VE98FqW0QrWBgBdj2kuaV/uyzV37UxdaIJj5sG1vMCHpt+iGSdRQGSjetkkgr8jeS8xvV+dyqqlHmbxikFTJVIdBugErj39WqZLhkwUIp48xwABz2QHO5HmJ1TMmc5bQFSt9Uxj/GN4iG5CtYBKWztGRZdi5ZLQ="
-    - secure: "nphbuP7Cjz3VIdtNwAoeasy4Aw5pGyXYPt0dnXigjFYTeub9a8Ok7cA+uFmN/Ep1yibefvJ48uTXyf84WzSl11gGlGHho4R1QV1zYqu6vpoRsMu67VhALBe03DWdBWDKC+2thSdYXcVH4YqmMAqchOHCCvBtssXzUecTm4ghdjPezbg2sXaTyxSZduT5bGkq70e75mmVVF50UUsrZj5LboXCOTkDaxyVVTycJnMFbCJNBmIzmnLR1lti+C7eGbaxPsZhAYgLGWHeyT9UGs3AhLTu1QiYV6hevHx5/m0pIrZEuJPXClW9EHpGI7aaoVdExyD6Qv0pLqATCbV+BIF7PlycEt3CuecnnCCkwE6IRtFGBeIPdxa/o4QRWiPVsQ9cRPSXW8McBbVCBtcIWtMeJyjprRJWaxokYEyzO5/LqB2pINyWX42SWoHPOa2dEWy2iNImaMmOu8u1/aX6u254Z3p0OycsPWMEGuiZruqAzsBTGXlP/JnanNZwOMZ4iJp6lHdv7q6fzfdgIvkq/NvmYn/ETI37zUhm/a6kiM/Pmo5sIjc5CFFHZIwjXl5K4Zbl3hua5DgKpYuryUcsHMrBvouAl31CHgWozfOuFlrcRQBYQ2A+JvhChLck7qDWLCU9k0IfjDU/CW2Y71FeZXrCbFekYf+C1ijp8gnJ5g0uG2g="
-    - PHOST='https://$PSITE-$PNAME.pantheon.io'
-
+  - PNAME='ci-demo'
+  - PSITE=$(cat /dev/urandom | tr -cd 'a-z0-9' | head -c 4)
+  - PSITE="ci$TRAVIS_BUILD_NUMBER-$PSITE"
+  - PUUID='445bb8f4-2088-4b79-9f2a-f436a18e683c'
+  - PSOURCE='dev'
+  - PHOST='https://$PSITE-$PNAME.pantheon.io'
+  - secure: Imb5sPabzIBDX8KlHvsR+LmJpYxNfHfQ/5RawzA+zHA+2XmX2AdFFA6eKMHKTkkFMvo/b7WZSxwe0Is5FwS3Q1biPUHjRTarkm2Pm7n6NmqiyiWTXAnydf7NduPSk4cVKewWMXORJmoxHxsV8r04LWznUfbag1/xPi3LaoQmuCO8RYAwNMvuDYGSoVEevrua+aqy4Aa0NkVKAey0DP/LLfwNTxVFRMrMWM2HXM3hZi6rZMlymYNSEUTnl9E+CIf2iCzD0Q/XBYszQZYwbBlnV18H1Q56Bp+uC9dw0xlbIw+so5ygzU5Qd5EfUkQH7dQYv40tR+A6+Poqi93ccpYzvymV0sN6eBo0tW1sElap+Wro8gfstnK6g2hWQ/Y2/vbpk6TCuPgx/rAwsZ4zRRxQyVPCnXS0zD3WcXZSgXQSjIDGyIXf3bR/sHXiV/MQw2IvlzDnMb09CbkaqBmjW6b0VhSKfD+/tOYZ+LouL3ORxPFWzH7a6ykYZE/zfWPsUhbdGZoTcrj6O8kg0g//MHY49N/zw4Q9xkCKqoCP0565t89rH3LiX+JTQsMrmnRkVFuGGHiqV2ceYonYQCldQ1tIuy+6fxdiljqyPZKNWDcywQeG7zmLFAXxkJ+G25qPrsCzGJIuN0/AexqepKObQlb8MkQB4VL10eZQOMDiABirNLQ=
+  - secure: YocF26vs8baZ2/FE4ttZKB4jIROSv7RIYQ8Ktkx+PHLGqXLz9grv4HwqIlgRoDwxvpiQ0fZ0AgP6uOu3XXG4jgF6KJ79Wk5a08cKEajLO5vNh2v37tRCvENoI90vtISYpRlfAKjmZqDBb+lBEJo2Eqdlf6UvO4nQ6RozPJT9Mf/QUvqyUhzzhJUeePCTSNMNkQ5I8MawXZQBQ6VYKKgZpRAWPRRnrQMtj7hJaS+NES70CiUdzI1OrswxuNYM3hUxVnwZTwx9gULbPtEik46d1yRxF7AkfFyn5ax/W/XtqkcLNzb1h6rJYWu/q8rSpuNwsbyCQrCc98yBTHDDWMlJXBC5LPwjAzCqwkgHmIaqx+uCQ/o3Qc/UMHQdEi6No7mZ9qHUgiAC560JAv5VIIHJugRSRL4j1zHueHXenhwXmj7rUhwxXrZREQS2nnGYaaubsKNnrlnUw8Eyhbfw0EtPfLKQN4Rc631aCZ2yiddXT/qSntbnuz37Az7VCpKmfWNqS9zAD/ZozwWTsh+UXivkTo0w0HiBiKI0Fk6hp8IgcUAddKNk76+O7LIJZ1U5ztow4Jjl7pZYhbeen4AlGvxs+/9wErE6RK7VG9ZWz8WDvJVcd1XdGyS7Ih0kNIr8H7eUIbdMQXP5hknm4PXAGGJOxFTmCB2HXh3FHbOH+ZVPPfw=
 before_install:
-  - sudo apt-get update > /dev/null
-
-  - composer self-update
+- sudo apt-get update > /dev/null
+- composer self-update
 install:
-  - echo "StrictHostKeyChecking no" > ~/.ssh/config
-    # install php packages required for running a web server from drush on php 5.3
-  - sudo apt-get install -y --force-yes php5-cgi php5-mysql
-
-  # install drush globally
-  - composer global require drush/drush:7.*
-
-  # add composer's global bin directory to the path
-  # see: https://github.com/drush-ops/drush#install---composer
-  - export PATH="$HOME/.composer/vendor/bin:$PATH"
-  # Install terminus.
-  - sudo curl https://github.com/pantheon-systems/cli/releases/download/0.5.5/terminus.phar -L -o /usr/local/bin/terminus && sudo chmod +x /usr/local/bin/terminus
-  - echo "sendmail_path='true'" >> `php --ini | grep "Loaded Configuration" | awk '{print $4}'`
-
+- echo "StrictHostKeyChecking no" > ~/.ssh/config
+- sudo apt-get install -y --force-yes php5-cgi php5-mysql
+- composer global require drush/drush:7.*
+- export PATH="$HOME/.composer/vendor/bin:$PATH"
+- sudo curl https://github.com/pantheon-systems/cli/releases/download/0.5.5/terminus.phar
+  -L -o /usr/local/bin/terminus && sudo chmod +x /usr/local/bin/terminus
+- echo "sendmail_path='true'" >> `php --ini | grep "Loaded Configuration" | awk '{print
+  $4}'`
 script:
-  # stand up drupal
-  - cd $TRAVIS_BUILD_DIR
-  - composer install
-  - npm install && npm update
-  - cd sites/all/themes/manati
-  - npm install && npm update
-  - drush site-install manati -y --db-url=mysql://root@localhost/cidemo --db-su='root' --db-su-pw='' --site-name='CI-Demo'
-  - drush updb -y && drush fra -y
-  - drush cc all
-  # Run behat tests
-  - cd $TRAVIS_BUILD_DIR
-  - drush runserver --server=builtin 8082 --strict=0 &
-  - sleep 10
-  - grunt
+- cd $TRAVIS_BUILD_DIR
+- composer install
+- npm install && npm update
+- cd sites/all/themes/manati
+- npm install && npm update
+- drush site-install manati -y --db-url=mysql://root@localhost/cidemo --db-su='root'
+  --db-su-pw='' --site-name='CI-Demo'
+- drush updb -y && drush fra -y
+- drush cc all
+- cd $TRAVIS_BUILD_DIR
+- drush runserver --server=builtin 8082 --strict=0 &
+- sleep 10
+- grunt
 after_script:
-  - drush status
-
+- drush status
 after_success:
-  - echo $TRAVIS_BRANCH
-  - echo $TRAVIS_PULL_REQUEST
-  # Authenticate with Pantheon via Terminus.
-  - terminus auth login $PEMAIL --password=$PPASS
-  - if [ $TRAVIS_BRANCH = 'master' ] && [ $TRAVIS_PULL_REQUEST != 'false' ] ; then git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git && git checkout -b $PSITE && git push --force pantheon $PSITE && terminus site create-env --site=$PNAME --env=$PSITE --from-env=$PSOURCE && terminus sites aliases && drush cc drush && cd $HOME && drush @pantheon.$PNAME.$PSITE updb -y --strict=0 && drush @pantheon.$PNAME.$PSITE fra -y --strict=0 && terminus site clear-caches --site=$PNAME --env=$PSITE ; fi
-  - if [ $TRAVIS_BRANCH = 'master' ] && [ $TRAVIS_PULL_REQUEST = 'false' ] ; then git remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git && git push pantheon $TRAVIS_BRANCH && terminus sites aliases && drush cc drush && cd $HOME && drush @pantheon.$PNAME.$TRAVIS_BRANCH updb -y --strict=0 && drush @pantheon.$PNAME.$TRAVIS_BRANCH fra -y --strict=0 ; fi
+- echo $TRAVIS_BRANCH
+- echo $TRAVIS_PULL_REQUEST
+- terminus auth login $PEMAIL --password=$PPASS
+- if [ $TRAVIS_BRANCH = 'master' ] && [ $TRAVIS_PULL_REQUEST != 'false' ] ; then git
+  remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git
+  && git checkout -b $PSITE && git push --force pantheon $PSITE && terminus site create-env
+  --site=$PNAME --env=$PSITE --from-env=$PSOURCE && terminus sites aliases && drush
+  cc drush && cd $HOME && drush @pantheon.$PNAME.$PSITE updb -y --strict=0 && drush
+  @pantheon.$PNAME.$PSITE fra -y --strict=0 && terminus site clear-caches --site=$PNAME
+  --env=$PSITE ; fi
+- if [ $TRAVIS_BRANCH = 'master' ] && [ $TRAVIS_PULL_REQUEST = 'false' ] ; then git
+  remote add pantheon ssh://codeserver.dev.$PUUID@codeserver.dev.$PUUID.drush.in:2222/~/repository.git
+  && git push pantheon $TRAVIS_BRANCH && terminus sites aliases && drush cc drush
+  && cd $HOME && drush @pantheon.$PNAME.$TRAVIS_BRANCH updb -y --strict=0 && drush
+  @pantheon.$PNAME.$TRAVIS_BRANCH fra -y --strict=0 ; fi
 notifications:
-#  irc: irc.freenode.org#elmsln
-
-#  email: false
   slack:
     rooms:
-      - secure: "krMbpPDhjEkP7G8VPb2CHuxpDbu3gnP8GjJpZl6FWz74vAi1M+oZ3RNKVUANQ/9A/pX1BmnhcKnCPBOzrBuDdPO8xDuVQ9rTmSYu8ZYXDy2UHHD/r0awaORc8TyZ3JeSFmGYCKTZBbTOl2sijuVQe3s1MO+XvPKJHZE40KHEEK1ytjJ8b5bWXlvzGYhsuqW6nRKir/19lyb5yEPnWMaEAxwjacLyeZn2LxNUFYdzcAMJuVoiU/9zNUuHLrBk2P/+/cXNH3yhR6VESB2deSF3k/mlPN4rlMK/IMazx+XF13SB0qsx/30CMlcZSsVk1n2myxisCWsV0ITBjiWQDJcPsgdR0EgFhkXsBKWXuHO8dhRoT1UsmHVXLrL9D0ite3PF50fCOtDVYiHMuWm9tFGKo2xzKqcuhcHjkCY68Co9fmTP4uEgMIf2uGrmJhVWrsmcDCVwWtMbwLu5n5TcX2U1a4rhYUnAvmAwiHoX+pmb00b3XbaM6Kl45/Uz40PhZRZ19+MhvGkx4FdMcR33h+TcaqnXY6YYuPSHAn4Cx9c72xn5rTsJ1EWWcKJBtv2kIxTfss0k7tB+UQHXvSJyQfmIyWrTsZ10PG97td2p1+IS1VzZmeIbqyCqDiUjBLSXmILE4ps9WNmCMXv/UWCGBFG+5oZTedIOh/AmEybA041l1AY="
-#      - elmsln:WmKTRMe7k3IjprunaAVV3Jjg#code
-
+    - secure: krMbpPDhjEkP7G8VPb2CHuxpDbu3gnP8GjJpZl6FWz74vAi1M+oZ3RNKVUANQ/9A/pX1BmnhcKnCPBOzrBuDdPO8xDuVQ9rTmSYu8ZYXDy2UHHD/r0awaORc8TyZ3JeSFmGYCKTZBbTOl2sijuVQe3s1MO+XvPKJHZE40KHEEK1ytjJ8b5bWXlvzGYhsuqW6nRKir/19lyb5yEPnWMaEAxwjacLyeZn2LxNUFYdzcAMJuVoiU/9zNUuHLrBk2P/+/cXNH3yhR6VESB2deSF3k/mlPN4rlMK/IMazx+XF13SB0qsx/30CMlcZSsVk1n2myxisCWsV0ITBjiWQDJcPsgdR0EgFhkXsBKWXuHO8dhRoT1UsmHVXLrL9D0ite3PF50fCOtDVYiHMuWm9tFGKo2xzKqcuhcHjkCY68Co9fmTP4uEgMIf2uGrmJhVWrsmcDCVwWtMbwLu5n5TcX2U1a4rhYUnAvmAwiHoX+pmb00b3XbaM6Kl45/Uz40PhZRZ19+MhvGkx4FdMcR33h+TcaqnXY6YYuPSHAn4Cx9c72xn5rTsJ1EWWcKJBtv2kIxTfss0k7tB+UQHXvSJyQfmIyWrTsZ10PG97td2p1+IS1VzZmeIbqyCqDiUjBLSXmILE4ps9WNmCMXv/UWCGBFG+5oZTedIOh/AmEybA041l1AY=
